@@ -1,0 +1,78 @@
+body {
+    background-image: url('https://raw.githubusercontent.com/arpit456jain/Amazing-Js-Projects/master/Candy%20Crush/utils/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw; /* Используем почти всю ширину экрана */
+    height: 90vw; /* Сетка будет квадратной */
+    max-width: 560px;
+    max-height: 560px;
+    background-color: rgba(109, 127, 151, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.grid div {
+    height: calc(90vw / 8); /* Делим сетку на 8 ячеек */
+    width: calc(90vw / 8);  /* Аналогично ширина */
+    max-height: 70px;
+    max-width: 70px;
+    border-radius: 5px;
+    background-color: white; /* Для тестирования */
+}
+
+.scoreBoard {
+    background-color: rgba(0, 191, 255, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    width: 80vw; /* Пропорциональная ширина */
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #85796b;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 5px 0 0;
+    font-size: 2rem;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .grid {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    .scoreBoard {
+        width: 90vw;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
